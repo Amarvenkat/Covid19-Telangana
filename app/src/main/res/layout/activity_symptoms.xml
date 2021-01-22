@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Information.Symptoms">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/symptomsimg"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/symptoms"
+            android:textSize="20sp"
+            android:paddingTop="20dp"
+            android:paddingLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/Black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="19sp"
+            android:textColor="@color/Black"
+            android:paddingLeft="5dp"
+            android:text="@string/fever"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="17sp"
+            android:paddingLeft="10dp"
+            android:text="@string/fever_is_when_a_human_s_body_temperature_goes_above_the_normal_range_of_36_37_c_98_100_f_it_is_a_common_medical_sign_other_terms_for_a_fever_include_pyrexia_and_controlled_hyperthermia_as_the_body_temperature_goes_up_the_person_may_feel_cold_until_it_levels_off_and_stops_rising" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="19sp"
+            android:textColor="@color/Black"
+            android:paddingLeft="5dp"
+            android:text="@string/cough"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="17sp"
+            android:paddingLeft="10dp"
+            android:text="@string/a_cough_also_known_as_pertussis_is_a_voluntary_or_involuntary_act_that_clears_the_throat_and_breathing_passage_of_foreign_particles_microbes_irritants_fluids_and_mucus_it_is_a_rapid_expulsion_of_air_from_the_lungs_coughing_can_be_done_deliberately_or_as_part_of_a_reflex" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="19sp"
+            android:textColor="@color/Black"
+            android:paddingLeft="5dp"
+            android:text="@string/sore_throat"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="17sp"
+            android:paddingLeft="10dp"
+            android:text="@string/the_throat_runs_from_the_back_of_the_mouth_to_the_top_of_the_respiratory_and_digestive_tracks_and_has_three_main_parts_the_tonsil_pharynx_and_larynx_you_could_think_of_it_as_the_main_highway_for_air_dust_and_food_but_with_a_filter_lane_for_any_bacteria_viruses_and_other_irritants_that_may_have_got_on_the_road_the_throat_is_designed_to_capture_all_of_these_irritants_and_filter_them_out_before_they_can_cause_further_havoc_this_process_can_result_in_an_inflamed_throat_infection"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="19sp"
+            android:textColor="@color/Black"
+            android:paddingLeft="5dp"
+            android:text="@string/runny_nose"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="17sp"
+            android:paddingLeft="10dp"
+            android:text="@string/stuffy_nose_is_a_term_often_used_to_refer_to_refer_to_obstruction_to_the_flow_of_air_in_and_out_of_the_nose_while_runny_nose_refers_to_a_discharge_fluid_coming_from_the_nasal_passages_this_is_often_a_watery_clear_liquid_but_may_be_thicker_and_viscous_both_stuffy_and_runny_nose_are_associated_with_inflammation_and_swelling_congestion_of_the_inner_lining_of_the_nasal_passages_and_sinuses_rhinitis_is_a_term_that_refers_to_inflammation_of_the_nasal_passages_and_rhinorrhea_is_the_medical_term_for_runny_nose"
+            />
+
+    </LinearLayout>
+</ScrollView>

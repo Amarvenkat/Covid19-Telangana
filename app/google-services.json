@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "405134578887",
+    "firebase_url": "https://covid-19-telangana.firebaseio.com",
+    "project_id": "covid-19-telangana",
+    "storage_bucket": "covid-19-telangana.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405134578887:android:ce238afd900ce408945ae2",
+        "android_client_info": {
+          "package_name": "com.amar.covid19telangana"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "405134578887-mf56kno45129t961v7hngg9qcu1hl840.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIt-3NDjDGmfVe_5wsqtSfrC_tdYsNc3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "405134578887-mf56kno45129t961v7hngg9qcu1hl840.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

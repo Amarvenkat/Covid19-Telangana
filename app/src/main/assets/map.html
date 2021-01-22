@@ -1,0 +1,108 @@
+<html>
+<head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+google.load('visualization', '1', {'packages': ['geochart']});
+google.setOnLoadCallback(drawRegionsMap);
+
+    var newData = [['State', 'Popularity']];
+      // call java function from javascript
+    AndroidNativeCode.getValueJson();
+      // this function is used to send data from java class to html page using javascript
+        function setJson(Jsonobject)
+       {
+
+            for (var n =0; n < Jsonobject.length; n++)
+             {
+                // put the data in DataTable
+               newData.push([Jsonobject[n].State , parseInt(Jsonobject[n].Popularity) , '<div class="map-shape-one" onclick="call    (\''+Jsonobject[n].State+'\')"><p>Total</p><p>'+Jsonobject[n].Total+'</p><p>Active</p><p>'+Jsonobject[n].Active+'</p><p>Dead</p><p>'+Jsonobject[n].Dead+'</p><p>Recovered</p><p>'+Jsonobject[n].Recovered+'</p></div>']);
+             }
+
+       }
+
+       function call(abc) {
+
+        document.getElementById('msg_call').innerHTML = 'You clicked '+abc;
+
+       }
+      function drawRegionsMap() {
+
+      var data;
+        data = new google.visualization.DataTable();
+
+          // determine the number of rows and columns.
+          var numRows = newData.length;
+          var numCols = newData[0].length;
+
+          // in this case the first column is of type 'string'.
+          data.addColumn('string', newData[0][0]);
+
+          // all other columns are of type 'number'.
+          for (var i = 1; i < numCols; i++)
+            data.addColumn('number', newData[0][i]);
+
+            data.addColumn({
+                      type: 'string',
+                      role: 'tooltip',
+                      'p': {'html': true}
+             });
+
+          // now add the rows.
+          for (var i = 1; i < numRows; i++)
+            data.addRow(newData[i]);
+
+        var options = {
+            region: 'IN',
+                displayMode: 'regions',
+               resolution: 'provinces',
+                width: 640,
+                height: 480,
+                legend: 'none',
+         tooltip: {isHtml: true}
+        };
+
+        var chart = new google.visualization.GeoChart(document.getElementById('visualization'));
+
+       chart.draw(data, options);
+    };
+
+
+    </script>
+
+    <style>
+        .map-shape-one {
+        display: inline-block;
+        height: auto;
+        margin: auto;
+        font-weight: bold;
+        text-transform: uppercase;
+        max-width: 100%;
+        min-height: 40px;
+        min-width: 70px;
+        padding: 8px 15px 8px 20px;
+        width: auto;
+        }
+        .map-shape-one p {
+        margin: 0px;
+        text-align: center;
+        color: #000;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        }
+         .map-shape-one p:first-child {
+        font-weight: bold;
+        color: #D50000;
+        text-transform: uppercase;
+        }
+        .map-shape-one p:second-child {
+        color: #D50000;
+        text-transform: uppercase;
+        }
+
+    </style>
+</head>
+<body >
+<div id="visualization" style="margin: 1em"></div>
+
+</body>
+</html>

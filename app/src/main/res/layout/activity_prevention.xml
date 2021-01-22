@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Information.Prevention">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/preventionimg"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prevention"
+        android:textSize="20sp"
+        android:paddingTop="20dp"
+        android:paddingLeft="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/Black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="19sp"
+            android:textColor="@color/Black"
+            android:paddingLeft="5dp"
+            android:text="@string/self_isolation"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="17sp"
+            android:paddingLeft="10dp"
+            android:text="@string/avoid_close_contact_with_people_who_are_sick_keep_distance_between_yourself_and_other_people_if_covid_19_is_spreading_in_your_community_this_is_especially_important_for_people_who_are_at_higher_risk_of_getting_very_sick"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="19sp"
+            android:textColor="@color/Black"
+            android:paddingLeft="5dp"
+            android:text="@string/sanitizer"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="17sp"
+            android:paddingLeft="10dp"
+           android:text="@string/wash_your_hands_often_with_soap_and_water_for_at_least_20_seconds_especially_after_you_have_been_in_a_public_place_or_after_blowing_your_nose_coughing_sneezing_if_soap_and_water_are_not_readily_available_use_a_hand_sanitizer_that_contains_at_least_60_alcohol_cover_all_surfaces_of_your_hands_and_rub_them_together_until_they_feel_dry_avoid_touching_your_eyes_nose_and_mouth_with_unwashed_hands"/>
+           <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="19sp"
+            android:textColor="@color/Black"
+            android:paddingLeft="5dp"
+            android:text="@string/wear_a_facemask"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="17sp"
+            android:paddingLeft="10dp"
+            android:text="@string/if_you_are_sick_you_should_wear_a_facemask_when_you_are_around_other_people_e_g_sharing_a_room_or_vehicle_and_before_you_enter_a_healthcare_provider_s_office_if_you_are_not_able_to_wear_a_facemask_for_example_because_it_causes_trouble_breathing_then_you_should_do_your_best_to_cover_your_coughs_and_sneezers_and_people_who_are_caring_for_you_should_wear_a_facemask_if_they_enter_your_room_if_you_are_not_sick_you_do_not_need_to_wear_a_facemask_unless_you_are_caring_for_someone_who_is_sick_and_they_are_not_able_to_wear_a_facemask_facemasks_may_be_in_short_supply_and_they_should_be_saved_for_caregivers"/>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CollectionFood.CollectionFoodMain">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/food_categories"
+            android:textColor="@color/Black"
+            android:padding="20dp"
+            android:textSize="16dp"/>
+
+        <CheckBox
+            android:id="@+id/collectionfoodtypeSnacks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/snacks"/>
+        <CheckBox
+            android:id="@+id/collectionfoodtypeProvision"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/provision"/>
+        <CheckBox
+            android:id="@+id/collectionfoodtypeCookedfood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/cooked_food"/>
+        <CheckBox
+            android:id="@+id/collectionfoodtypeOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/other"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity"
+            android:paddingTop="20dp"
+            android:textColor="@color/Black"
+            android:paddingLeft="20dp"
+            android:textSize="16dp"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+        <RadioButton android:id="@+id/quantity1to10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1_to_10"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/quantity11to100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_11_to_100"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/quantityabove100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/above_100"
+            android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+        <Button
+            android:id="@+id/collectionfoodsubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+
+
+
+    </LinearLayout>
+</ScrollView>

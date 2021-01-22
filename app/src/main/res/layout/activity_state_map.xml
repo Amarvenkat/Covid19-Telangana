@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/webview"
+        />
+
+<!--    <com.anychart.AnyChartView-->
+<!--        android:id="@+id/any_chart_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="500dp" />-->
+
+    <com.anychart.AnyChartView
+        android:id="@+id/any_chart_bar"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"/>
+<!--    <com.anychart.AnyChartView-->
+<!--        android:id="@+id/any_chart_bartotal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="500dp"/>-->
+
+    <Button
+        android:id="@+id/knowmore"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/view_state_wise"
+        android:textColor="@color/Black"
+        android:background="@drawable/buttomshape"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/telustate"
+        android:background="@drawable/buttomshape"
+        android:text="@string/view_district_wise"
+        android:textColor="@color/Black"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnzone"
+        android:text="@string/zone"
+        android:textColor="@color/Black"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/buttomshape"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        />
+</LinearLayout>
+</ScrollView>

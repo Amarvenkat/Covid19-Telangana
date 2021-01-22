@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Orphan.OrphanHome">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/people_at_high_risk_clinically_extremely_vulnerable"
+            android:textSize="19sp"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/have_had_organ_transplants_n_are_having_chemotherapy_or_antibody_treatment_for_cancer_including_immunotherapy_n_are_having_an_intense_course_of_radiotherapy_radical_radiotherapy_for_lung_cancer_n_are_having_targeted_cancer_treatments_that_can_affect_the_immune_system_such_as_protein_kinase_inhibitors_or_parp_inhibitors_n_have_blood_or_bone_marrow_cancer_such_as_leukaemia_lymphoma_or_myeloma_n_have_had_a_bone_marrow_or_stem_cell_transplant_in_the_past_6_months_or_are_still_taking_immunosuppressant_medicine_n_have_been_told_by_a_doctor_they_have_a_severe_lung_condition_such_as_cystic_fibrosis_severe_asthma_or_severe_copd_n_have_a_condition_that_means_they_have_a_very_high_risk_of_getting_infections_such_as_scid_or_sickle_cell_n_are_taking_medicine_that_makes_them_much_more_likely_to_get_infections_such_as_high_doses_of_steroids_or_immunosuppressant_medicine_n_have_a_serious_heart_condition_and_are_pregnant_n"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/people_at_moderate_risk_clinically_vulnerable"
+            android:textSize="19sp"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/are_70_or_older_n_have_a_lung_condition_that_s_not_severe_such_as_asthma_copd_emphysema_or_bronchitis_n_have_heart_disease_such_as_heart_failure_n_have_diabetes_n_have_chronic_kidney_disease_n_have_liver_disease_such_as_hepatitis_n_have_a_condition_affecting_the_brain_or_nerves_such_as_parkinson_s_disease_motor_neurone_disease_multiple_sclerosis_or_cerebral_palsy_n_have_a_condition_that_means_they_have_a_high_risk_of_getting_infections_n_are_taking_medicine_that_can_affect_the_immune_system_such_as_low_doses_of_steroids_n_are_very_obese_a_bmi_of_40_or_above_n_are_pregnant_n"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/register_with_this_service_if_either"
+            android:textSize="19sp"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/you_have_a_medical_condition_which_means_you_re_classed_as_being_clinically_extremely_vulnerable_to_coronavirus_n_you_ve_been_told_by_your_gp_or_hospital_clinician_that_you_re_clinically_extremely_vulnerable_and_need_to_shield_n"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/if_you_need_it_you_ll_be_able_to"
+            android:textSize="19sp"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/get_a_weekly_box_of_basic_supplies_n_get_priority_for_supermarket_deliveries_n_ask_for_help_meeting_your_basic_care_needs_n"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/register_whether_you_need_help_at_the_moment_or_not_n_you_can_register_yourself_or_on_behalf_of_someone_else_n"
+            android:textSize="16sp"
+            android:textColor="@color/Black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/do_you_live_in_india"
+            android:textSize="19sp"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp">
+
+            <RadioButton
+                android:id="@+id/orphanlivingyes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioOrphanLiving"
+                android:text="@string/yes"/>
+
+            <RadioButton
+                android:id="@+id/orphanlivingno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioOrphanLiving"
+                android:text="@string/no"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/do_you_live_in_orphans"
+            android:textSize="19sp"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp">
+
+            <RadioButton
+                android:id="@+id/orphanorphanyes"
+                android:onClick="onRadioOrphanOrphanLiving"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"/>
+
+            <RadioButton
+                android:id="@+id/orphanorphanno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioOrphanOrphanLiving"
+                android:text="@string/no"/>
+
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/have_you_had_a_letter_from_the_health_authorities_or_been_told_by_your_doctor_to_shield_because_you_re_clinically_extremely_vulnerable_to_coronavirus"
+            android:textSize="19sp"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/shielding_means_staying_at_home_as_much_as_possible_and_keeping_visits_outside_to_a_minimum"
+            android:textSize="19sp"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp">
+
+            <RadioButton
+                android:id="@+id/orphansheldingyes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioOrphanShelding"
+                android:text="@string/yes"/>
+
+            <RadioButton
+                android:id="@+id/orphansheldingno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioOrphanShelding"
+                android:text="@string/no"/>
+            <RadioButton
+                android:id="@+id/orphansheldingnotsure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioOrphanShelding"
+                android:text="Not sure"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/help_required_for"
+            android:textSize="19sp"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <CheckBox
+            android:id="@+id/orphancarearrangements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_1_ongoing_care_arrangements"
+            android:layout_marginLeft="20dp"/>
+
+        <CheckBox
+            android:id="@+id/orphanmedicinesupplies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_2_support_with_medicine_supplies"
+            android:layout_marginLeft="20dp"
+            />
+
+        <CheckBox
+            android:id="@+id/orphandailyliving"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_3_support_with_daily_living"
+            android:layout_marginLeft="20dp"
+            />
+
+        <CheckBox
+            android:id="@+id/orphanmedicalattention"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_4_urgent_medical_attention"
+            android:layout_marginLeft="20dp"
+            />
+
+        <CheckBox
+            android:id="@+id/orphanownhealth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_5_looking_after_your_own_health"
+            android:layout_marginLeft="20dp"
+            />
+
+        <Button
+            android:id="@+id/orphansubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+
+
+</ScrollView>
